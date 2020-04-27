@@ -19,7 +19,7 @@ const darkTheme = createMuiTheme({
 ReactDOM.render(
   <React.Fragment>
     <ThemeProvider theme={darkTheme}>
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <App />
       </BrowserRouter>
     </ThemeProvider>
