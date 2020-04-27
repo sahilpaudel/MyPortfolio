@@ -4,6 +4,7 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core";
 import { BrowserRouter } from "react-router-dom";
+import Router from "react-router-dom/HashRouter"
 
 const rootElement = document.getElementById("root");
 
@@ -19,9 +20,9 @@ const darkTheme = createMuiTheme({
 ReactDOM.render(
   <React.Fragment>
     <ThemeProvider theme={darkTheme}>
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <Router>
         <App />
-      </BrowserRouter>
+      </Router>
     </ThemeProvider>
   </React.Fragment>,
   rootElement
