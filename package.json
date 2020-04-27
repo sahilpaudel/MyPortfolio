@@ -4,7 +4,7 @@
   "description": "",
   "keywords": [],
   "main": "src/index.js",
-  "homepage": "http://sahilpaudel.github.io/thehighpaudel",
+  "homepage": "https://portfolio.sahilpaudel.in",
   "dependencies": {
     "@material-ui/core": "4.9.12",
     "@material-ui/icons": "4.9.1",
