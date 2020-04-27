@@ -3,8 +3,7 @@ import ReactDOM from "react-dom";
 
 import App from "./App";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core";
-import { BrowserRouter } from "react-router-dom";
-import Router from "react-router-dom/HashRouter"
+import { HashRouter } from "react-router-dom"
 
 const rootElement = document.getElementById("root");
 
@@ -20,9 +19,9 @@ const darkTheme = createMuiTheme({
 ReactDOM.render(
   <React.Fragment>
     <ThemeProvider theme={darkTheme}>
-      <Router>
+      <HashRouter>
         <App />
-      </Router>
+      </HashRouter>
     </ThemeProvider>
   </React.Fragment>,
   rootElement
