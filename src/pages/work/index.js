@@ -58,7 +58,7 @@ const Work = () => {
         {
           works.map(work => (
             <Grid item xs={12} sm={12} md={6} lg={4} key={work.name}>
-              <a href={work.website} target="_blank" rel="" className={classes.link}>
+              <a href={work.website} target="_blank" rel="noopener noreferrer" className={classes.link}>
                 <Card className={classes.root}>
                   <CardHeader
                     avatar={

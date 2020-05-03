@@ -60,7 +60,7 @@ const AboutMe = () => {
         </Typography>
       </div>
       <Typography variant="caption" className={classes.aboutMeContent}>
-        I <span className={classes.heart}>❤</span> Java, Spring Boot, React &
+        I <span className={classes.heart}>❤</span> Java, Spring Boot, NodeJS, React &
         Elixir.
       </Typography>
       <Typography variant="h6" className={classes.skillsText}>
