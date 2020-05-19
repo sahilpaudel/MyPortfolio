@@ -39,8 +39,10 @@ const useStyles = makeStyles(theme => ({
     color: 'white',
     padding: '0 30px',
     textTransform: 'capitalize',
+  },
+  hireMeParent: {
     [theme.breakpoints.down("md")]: {
-      display: "flex",
+      display: 'flex', 
       justifyContent: 'center'
     }
   }
@@ -83,13 +85,15 @@ const UserInfoCard = () => {
                 <li>Contact: email: sahilpaudel@yahoo.in / tel: 9876996015</li>
               </Typography>
             </ul>
-            <Button
-              startIcon={<MailIcon />}
-              className={classes.hireMe}
-              size="small"
-              onClick={() => window.location.href = 'mailto:sahilpaudel@yahoo.in'}>
+            <div className={classes.hireMeParent}>
+              <Button
+                startIcon={<MailIcon />}
+                className={classes.hireMe}
+                size="small"
+                onClick={() => window.location.href = 'mailto:sahilpaudel@yahoo.in'}>
                 Hire Me
             </Button>
+            </div>
           </CardContent>
         </div>
       </Card>
