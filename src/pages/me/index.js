@@ -68,7 +68,7 @@ const AboutMe = () => {
       </Typography>
       <div>
         {skills.map(skill => (
-          <Chip className={classes.chip} label={skill} />
+          <Chip key={skill} className={classes.chip} label={skill} />
         ))}
       </div>
       <Typography variant="h6" className={classes.skillsText}>

@@ -4,8 +4,10 @@ import {
   CardMedia,
   makeStyles,
   CardContent,
-  Typography
+  Typography,
+  Button
 } from "@material-ui/core";
+import MailIcon from "@material-ui/icons/MailOutline"
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -27,6 +29,20 @@ const useStyles = makeStyles(theme => ({
   },
   ul: {
     marginTop: 0
+  },
+  hireMe: {
+    background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
+    border: 0,
+    fontSize: 12,
+    borderRadius: 3,
+    boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
+    color: 'white',
+    padding: '0 30px',
+    textTransform: 'capitalize',
+    [theme.breakpoints.down("md")]: {
+      display: "flex",
+      justifyContent: 'center'
+    }
   }
 }));
 
@@ -67,6 +83,13 @@ const UserInfoCard = () => {
                 <li>Contact: email: sahilpaudel@yahoo.in / tel: 9876996015</li>
               </Typography>
             </ul>
+            <Button
+              startIcon={<MailIcon />}
+              className={classes.hireMe}
+              size="small"
+              onClick={() => window.location.href = 'mailto:sahilpaudel@yahoo.in'}>
+                Hire Me
+            </Button>
           </CardContent>
         </div>
       </Card>
