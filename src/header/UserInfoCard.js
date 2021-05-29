@@ -51,6 +51,18 @@ const useStyles = makeStyles(theme => ({
 const UserInfoCard = () => {
   const classes = useStyles();
 
+  const getExperience = () => {
+    const date1 = new Date("07/03/2017")
+    const date2 = new Date()
+
+    var Difference_In_Time = date2.getTime() - date1.getTime();
+  
+    // To calculate the no. of days between two dates
+    var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
+
+    return Math.round(Difference_In_Days)
+  }
+
   return (
     <React.Fragment>
       <Card className={classes.root}>
@@ -73,7 +85,7 @@ const UserInfoCard = () => {
                 <li>Coding & Living in Bengaluru, India</li>
               </Typography>
               <Typography variant="caption" color="textSecondary">
-                <li>3 years of experience as a Developer</li>
+                <li>~4 years of experience as a Developer or <span style={{fontWeight: 'bold', color: 'white'}}>{getExperience()}</span> days</li>
               </Typography>
               <Typography variant="caption" color="textSecondary">
                 <li>

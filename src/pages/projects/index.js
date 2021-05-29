@@ -1,5 +1,5 @@
 import React from "react";
-import { makeStyles, Typography, Chip } from "@material-ui/core";
+import { makeStyles, Typography, Chip, Avatar } from "@material-ui/core";
 import { ExpansionPanel, ExpansionPanelSummary, ExpansionPanelDetails } from "../../components/PanelUtility";
 import { project } from "../../utility/projectData";
 
@@ -36,6 +36,11 @@ const useStyles = makeStyles(theme => ({
   stack: {
     marginTop: 5
   },
+  logo: {
+    marginLeft: theme.spacing(1),
+    width: theme.spacing(3),
+    height: theme.spacing(3),
+  },
   footer: {
     '& .MuiChip-root': {
       borderRadius: 0
@@ -60,7 +65,8 @@ const Projects = () => {
           expanded={expanded === 'panel' + i}
           onChange={handleChange('panel' + i)} >
           <ExpansionPanelSummary aria-controls={`panel${i + 1}d-content`} id={`panel${i + 1}d-header`}>
-            <Typography>{project.name}</Typography>
+            <Typography style={{fontWeight: "bolder"}}>{project.name}</Typography>
+            <Avatar alt={project.logo} variant="rounded" src={project.logo} className={classes.logo}/>
             <Typography className={classes.year}>{project.year}</Typography>
           </ExpansionPanelSummary>
           <ExpansionPanelDetails className={classes.details}>
