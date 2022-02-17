@@ -1,5 +1,13 @@
 export const project = [
   {
+    name: "Omnicron (Elasticsearch Cron)",
+    stack: ["Python", "Kafka", "NodeJS", "Redis"],
+    logo: "pharmeasy.png",
+    description: "The idea was to push the MySQL DB data into Elasticsearch to reduce the DB queries and search feasibility from the web application",
+    contribution: "We had 2 components in this project, the producer which pulls all the items from an API that needs to processed and pushed into the queue and the consumer which I was responsible to build, it gets the item is and type, and it will a certain API which we have created that queries the database and return the response, the response is cached in redis to improve response time and reduce db hits. Once the consumer gets the item details, it transforms the data as required in this case create ES documents based on pincode serviceability. The process earlier use to take 8-9 hours, now it gets completed in ~ 1.5 hours and also we have update individual item details in the ES which was not available earlier.",
+    year: 2022
+  },
+  {
     name: "Oracle (Q/A)",
     stack: ["Go", "Kafka", "React", "Ant Design"],
     logo: "pharmeasy.png",
