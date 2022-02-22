@@ -81,11 +81,14 @@ const UserInfoCard = () => {
               @Software Developer
             </Typography>
             <ul className={classes.ul}>
+            <Typography variant="caption" color="textSecondary">
+                <li>Current Position: <i><b>Senior Software Engineer</b></i></li>
+              </Typography>
               <Typography variant="caption" color="textSecondary">
                 <li>Coding & Living in Bengaluru, India</li>
               </Typography>
               <Typography variant="caption" color="textSecondary">
-                <li>~4 years of experience as a Developer or <span style={{fontWeight: 'bold', color: 'white'}}>{getExperience()}</span> days</li>
+                <li>~{(getExperience()/365).toFixed(1)} years of experience as a Developer or <span style={{fontWeight: 'bold', color: 'white'}}>{getExperience()}</span> days</li>
               </Typography>
               <Typography variant="caption" color="textSecondary">
                 <li>

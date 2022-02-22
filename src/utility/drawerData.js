@@ -2,6 +2,7 @@ import PersonIcon from "@material-ui/icons/Person";
 import WorkIcon from "@material-ui/icons/BusinessCenter";
 import ProjectIcon from "@material-ui/icons/AccountTree";
 import SchoolIcon from "@material-ui/icons/School";
+import FilterHdrIcon from '@material-ui/icons/FilterHdr';
 
 export const drawerOptions = [
   {
@@ -23,5 +24,10 @@ export const drawerOptions = [
     text: "Education",
     icon: SchoolIcon,
     path: "/education"
+  },
+  {
+    text: "Adventures",
+    icon: FilterHdrIcon,
+    path: "/adventures"
   }
 ];
