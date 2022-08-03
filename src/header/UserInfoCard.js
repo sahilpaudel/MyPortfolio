@@ -97,7 +97,7 @@ const UserInfoCard = () => {
                 </li>
               </Typography>
               <Typography variant="caption" color="textSecondary">
-                <li>Contact: email: sahilpaudel@yahoo.in / tel: 9876996015</li>
+                <li>Contact: email: sahilpaudel@yahoo.in</li>
               </Typography>
             </ul>
             <div className={classes.hireMeParent}>
