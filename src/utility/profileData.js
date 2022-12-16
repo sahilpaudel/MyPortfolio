@@ -2,6 +2,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
+import YoutubeIcon from '@material-ui/icons/Youtube';
 
 export const profiles = [
   {
@@ -23,5 +24,10 @@ export const profiles = [
     name: "Twitter",
     url: "https://twitter.com/sahil_paudel",
     icon: TwitterIcon
+  },
+  {
+    name: "Youtube",
+    url: "https://youtube.com/@thehighpaudelverse?sub_confirmation=1",
+    icon: YoutubeIcon
   },
 ]
