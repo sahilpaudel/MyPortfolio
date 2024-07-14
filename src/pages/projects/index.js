@@ -87,7 +87,7 @@ const Projects = () => {
               </Typography>
             </div>
             <div className={classes.footer}>
-              <Typography className={classes.stackText}>Stack:</Typography>
+              <Typography className={classes.stackText}>Tech Stack:</Typography>
               {
                 project.stack.map((s, i) => <Chip key={i} label={s} variant="outlined" size="small" className={classes.chip} />)
               }
